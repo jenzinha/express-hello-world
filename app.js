@@ -22,7 +22,7 @@ app.get('/tico', (req, res) => {
 
 app.get('/pokemons', (req, res) => {
     console.log("Just got a request!")
-    res.json("Bulbassauro", "Ivyssauro", "Venossauro", "Charmander", "Charmeleon", "Charizard", "Squirtle", "Wartortle", "Blastoise", "Caterpie")
+    res.parseJson("Bulbassauro", "Ivyssauro", "Venossauro", "Charmander", "Charmeleon", "Charizard", "Squirtle", "Wartortle", "Blastoise", "Caterpie")
 })
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
