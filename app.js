@@ -63,7 +63,7 @@ app.get('/pokemons', (req, res) => {
     {
       id: 10,
       name: "Blastois"
-    },
+    }
   ]);
 })
 
