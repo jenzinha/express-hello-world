@@ -66,6 +66,12 @@ app.get('/pokemons', (req, res) => {
     }
   ]);
 })
+var series = ['south park', 'mansao bly', 'marienne'];
+app.post('/series', (req, res) => {
+    let name = req.body.name;
+    series[(series.length)] = name;
+    return res.json([series[(series.length - 1)]]);
+});
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
