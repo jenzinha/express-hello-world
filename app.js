@@ -22,7 +22,49 @@ app.get('/tico', (req, res) => {
 
 app.get('/pokemons', (req, res) => {
     console.log("Just got a request!")
-    res.parseJson("Bulbassauro", "Ivyssauro", "Venossauro", "Charmander", "Charmeleon", "Charizard", "Squirtle", "Wartortle", "Blastoise", "Caterpie")
+    
+    res.json([
+    {
+      id: 1,
+      name: "Bulbassauro",
+    },
+    {
+      id: 2,
+      name: "Ivyssauro",
+    },
+    {
+      id: 3,
+      name: "Venossauro",
+    },
+    {
+      id: 4,
+      name: "Charmander",
+    },
+    {
+      id: 5,
+      name: "Charmeleon",
+    },
+    {
+      id: 6,
+      name: "Caterpie",
+    },
+    {
+      id: 7,
+      name: "Charizard",
+    },
+    {
+      id: 8,
+      name: "Squirtle",
+    },
+    {
+      id: 9,
+      name: "Wartortle",
+    },
+    {
+      id: 10,
+      name: "Blastois"
+    },
+  ]);
 })
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
